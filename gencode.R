@@ -14,7 +14,7 @@ isTransition <- function(n1,n2) {
 }
 
 isTransversion <- function(n1,n2)   {
-    ! isTransition(n1,n2)
+    (n1 != n2) && (! isTransition(n1,n2))
 }
 
 neighborsSynNonSyn <- function(s)    {
